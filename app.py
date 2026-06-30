@@ -19,7 +19,7 @@ if api_key:
     
     # Đọc nội dung PDF (Thay tên 'bai_tap.pdf' bằng đúng tên file của thầy)
     try:
-        knowledge = get_pdf_text("bai_tap.pdf") 
+        knowledge = get_pdf_text("Test.pdf") 
     except:
         knowledge = "Chưa tải file PDF lên."
 
