@@ -39,7 +39,7 @@ if api_key:
         
         prompt = f"Dựa trên đề bài này: {knowledge}. Hãy hướng dẫn học sinh giải câu hỏi: {user_input}. Nhớ làm theo đúng phong cách sư phạm thầy Long Bình đã dặn."
         
-        model = genai.GenerativeModel(""gemini-2.5-flash"")
+        model = genai.GenerativeModel("gemini-2.5-flash")
         response = model.generate_content(prompt)
         
         with st.chat_message("assistant"):
